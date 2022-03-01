@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(31, 2, 2);
+    background-color:  #1d000d;
 }
 h2{
     color: rgb(221, 69, 13);
@@ -24,19 +24,24 @@ p{
     border: 1px solid coral;
     margin: 10px;
     padding: 10px;
-    box-shadow: 1px 1px 10px #ec0404;
+    box-shadow: 1px 1px 15px rgb(110, 105, 105);
     border-radius: 10px;
     text-align: center;
+    
 }
 
 .details-style {
     margin: 0 auto;
-    width: 380px;
-    box-shadow: 1px 1px 8px #575353;
+    width: 500px;
+    box-shadow: 1px 1px 15px #575353;
     text-align: center;
     border-radius: 10px;
     padding: 10px;
     border: 1px solid coral;
+    background-color: rgb(105, 53, 53);
+  
+    
+
 }
 @media screen and (max-width: 580px) {
     /* .heading {

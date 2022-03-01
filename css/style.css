@@ -11,3 +11,48 @@ p{
     color: white;
     background-color: coral;
 }
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+  
+}
+.myStyle {
+    border: 1px solid coral;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.details-style {
+    margin: 0 auto;
+    width: 380px;
+    box-shadow: 1px 1px 8px #575353;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid coral;
+}
+@media screen and (max-width: 580px) {
+    /* .heading {
+        font-size: 25px;
+    } */
+
+
+body {
+padding: 0;
+}
+
+#container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        padding: 10px;
+
+    }
+}
+

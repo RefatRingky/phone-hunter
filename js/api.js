@@ -8,7 +8,7 @@ const searchPhone = () => {
     document.getElementById('container').textContent = ''
     spinner('block')
     const searchText = document.getElementById('search-field').value;
-    if (searchText == 0 || searchText < 0) {
+    if (searchText == 0 || searchText < 0 || searchText == '') {
         alert('Please Type Something For search Phone')
     }
     else{
@@ -68,7 +68,7 @@ const showDetail = (id) => {
         .then(data => displayDetails(data.data))
 
 }
-// show the phone details
+// show the phone details and release date condition
 const displayDetails = (details) => {
     console.log(details);
     document.getElementById('phone-detail').innerHTML = ''
@@ -81,7 +81,7 @@ const displayDetails = (details) => {
          <img class='w-50'  src="${details.image}" alt="">
          <h2>Brand-Name:${details.brand}</h2>
          <p>Phone-Name:${details.name}</p>
-         <p>ReleaseDate:${details.releaseDate}</p>
+         <p>ReleaseDate:${details.releaseDate?details.releaseDate:'Realease Date is Not Found'}</p>
          <p>Sensor:${details.mainFeatures.sensors}</p>
          <p>Others:${details.others.Bluetooth},${details.others.WLAN},${details.others.NFC},${details.others.GPS},${details.others.Radio},${details.others.USB}</p>
          

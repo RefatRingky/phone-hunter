@@ -81,6 +81,9 @@ const displayDetails = (details) => {
          <img class='w-50'  src="${details.image}" alt="">
          <h2>Brand-Name:${details.brand}</h2>
          <p>Phone-Name:${details.name}</p>
+         <p>Chipset:${details.mainFeatures.chipSet}</p>
+         <p>Display Size:${details.mainFeatures.displaySize}</p>
+         <p>Memory:${details.mainFeatures.memory}</p>
          <p>ReleaseDate:${details.releaseDate?details.releaseDate:'Realease Date is Not Found'}</p>
          <p>Sensor:${details.mainFeatures.sensors?details.mainFeatures.sensors:'Not Available'}</p>
          <p>Others:${details.others.Bluetooth?details.others.Bluetooth:'Not Available'},${details.others.WLAN?details.others.WLAN:'Not Available '},${details.others.NFC?details.others.NFC:'Not Available'},${details.others.GPS?details.others.GPS:'Not Available'},${details.others.Radio?details.others.Radio:'Not Available'},

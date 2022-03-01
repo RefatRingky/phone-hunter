@@ -83,7 +83,12 @@ const displayDetails = (details) => {
          <p>Phone-Name:${details.name}</p>
          <p>ReleaseDate:${details.releaseDate}</p>
          <p>Sensor:${details.mainFeatures.sensors}</p>
-         <p>Others:${details.others}</p>
+         <p>Others:${details.others.Bluetooth}</p>
+         <p>Others:${details.others.WLAN}</p>
+         <p>Others:${details.others.NFC}</p>
+         <p>Others:${details.others.GPS}</p>
+         <p>Others:${details.others.Radio}</p>
+         <p>Others:${details.others.USB}</p>
   
     `
     phoneDetails.appendChild(div);

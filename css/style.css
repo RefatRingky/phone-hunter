@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(31, 2, 2);
+}
+h2{
+    color: rgb(221, 69, 13);
+}
+p{
+    color: white;
+}
+#Search-btn{
+    color: white;
+    background-color: coral;
+}

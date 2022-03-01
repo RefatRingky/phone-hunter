@@ -86,8 +86,9 @@ const displayDetails = (details) => {
          <p>Memory:${details.mainFeatures.memory}</p>
          <p>ReleaseDate:${details.releaseDate?details.releaseDate:'Realease Date is Not Found'}</p>
          <p>Sensor:${details.mainFeatures.sensors?details.mainFeatures.sensors:'Not Available'}</p>
-         <p>Others:${details.others.Bluetooth?details.others.Bluetooth:'Not Available'},${details.others.WLAN?details.others.WLAN:'Not Available '},${details.others.NFC?details.others.NFC:'Not Available'},${details.others.GPS?details.others.GPS:'Not Available'},${details.others.Radio?details.others.Radio:'Not Available'},
-        ${details.others.USB?details.others.USB:'Not Available'}
+
+         <p>Others:Bluetooth:${details?.others?.Bluetooth?details.others.Bluetooth:'Not Available'},${details?.others?.WLAN?details.others.WLAN:'Not Available '},${details?.others?.NFC?details.others.NFC:'Not Available'},${details?.others?.GPS?details.others.GPS:'Not Available'},${details?.others?.Radio?details.others.Radio:'Not Available'},
+        ${details?.others?.USB?details.others.USB:'Not Available'}
         
          
   

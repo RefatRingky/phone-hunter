@@ -1,3 +1,8 @@
+// for loading spinner 
+const spinner = (spinnerStyle) => {
+    document.querySelector('.spinner-border').style.display = spinnerStyle
+}
+spinner('none')
 const searchPhone = () => {
     document.getElementById('phone-detail').textContent = ''
     document.getElementById('container').textContent = ''

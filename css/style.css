@@ -24,6 +24,7 @@ p{
     border: 1px solid coral;
     margin: 10px;
     padding: 10px;
+    box-shadow: 1px 1px 10px #ec0404;
     border-radius: 10px;
     text-align: center;
 }

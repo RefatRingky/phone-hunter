@@ -82,8 +82,10 @@ const displayDetails = (details) => {
          <h2>Brand-Name:${details.brand}</h2>
          <p>Phone-Name:${details.name}</p>
          <p>ReleaseDate:${details.releaseDate?details.releaseDate:'Realease Date is Not Found'}</p>
-         <p>Sensor:${details.mainFeatures.sensors}</p>
-         <p>Others:${details.others.Bluetooth},${details.others.WLAN},${details.others.NFC},${details.others.GPS},${details.others.Radio},${details.others.USB}</p>
+         <p>Sensor:${details.mainFeatures.sensors?details.mainFeatures.sensors:'Not Available'}</p>
+         <p>Others:${details.others.Bluetooth?details.others.Bluetooth:'Not Available'},${details.others.WLAN?details.others.WLAN:'Not Available '},${details.others.NFC?details.others.NFC:'Not Available'},${details.others.GPS?details.others.GPS:'Not Available'},${details.others.Radio?details.others.Radio:'Not Available'},
+        ${details.others.USB?details.others.USB:'Not Available'}
+        
          
   
     `

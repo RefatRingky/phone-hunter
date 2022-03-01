@@ -7,11 +7,11 @@ const searchPhone = () => {
         alert('Please Type Something For search Phone')
     }
     else{
-          // load phone data
+   // load phone data
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
     fetch(url)
         .then(res => res.json())
-        .then(data => displayPhone(data.data))
+        .then(data => displayPhone(data.data.slice(0,20)))
 
 
     document.getElementById('search-field').value = '';

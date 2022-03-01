@@ -18,3 +18,39 @@ const searchPhone = () => {
     }
 
 }
+// show the loading data
+const displayPhone = (data) => {
+   
+    if (data.length == 0) {
+        alert('No Result  found')
+        spinner('none')
+
+    }
+    // console.log(data);
+    const container = document.getElementById('container')
+    // container.innerHTML = ''
+    data.forEach(datas => {
+        console.log(datas);
+        if (data.length == 0) {
+            alert('Phone not found')
+
+        }
+        
+
+        const div = document.createElement('div')
+        div.classList.add('myStyle')
+        div.innerHTML = `
+            <img class='w-50'  src="${datas.image}" alt="">
+            <h2>Brand-Name: ${datas.brand} </h2>
+            <p>Phone-Name:${datas.phone_name}</p>
+            <button onclick="showDetail('${datas.slug}')" class='text-white bg-success border rounded')">Explor Detail</button> 
+             
+             `
+        container.appendChild(div)
+
+
+        spinner('none')
+
+
+    })
+}

@@ -29,7 +29,7 @@
 <body>
 
     <h2 class="text-center my-3">Welcome To Our Phone Hut</h2>
-
+    <!-- For the input Field -->
     <div class="input-group mb-3 w-50 mx-auto mt-3">
         <input id="search-field" type="text" class="form-control" placeholder="Search the phone you want"
             aria-label="Search the phone you want" aria-describedby="button-addon2">
@@ -37,7 +37,17 @@
         <button onclick="searchPhone()" class="btn bg-success text-white " type="button"
             id="search-btn">Search</button>
     </div>
-     
+     <!-- For adding spinner to show the loading of dat -->
+    <div class="spinner-border mx-auto  mt-5 text-danger" role="status">
+        <span id="spinner" class="  "></span>
+    </div>
+    <!-- End the spinner section-->
+
+    <!-- phone detail -->
+    <div id="phone-detail">
+
+    </div>
+     <!--  -->
 
     
 

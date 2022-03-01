@@ -11,7 +11,7 @@ const searchPhone = () => {
     const url = `https://openapi.programming-hero.com/api/phones?search=${searchText}`;
     fetch(url)
         .then(res => res.json())
-        .then(data => displayPhone(data.data.slice(0,20)))
+        .then(data => displayPhone(data.data))
 
 
     document.getElementById('search-field').value = '';

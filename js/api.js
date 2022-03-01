@@ -63,3 +63,23 @@ const showDetail = (id) => {
         .then(data => displayDetails(data.data))
 
 }
+// show the phone details
+const displayDetails = (details) => {
+    console.log(details);
+    document.getElementById('phone-detail').innerHTML = ''
+    const phoneDetails = document.getElementById('phone-detail');
+    const div = document.createElement('div');
+    div.classList.add('details-style');
+    div.classList.add('myStyle');
+    div.innerHTML = `
+   
+         <img class='w-50'  src="${details.image}" alt="">
+         <h2>Brand-Name:${details.brand}</h2>
+         <p>Phone-Name:${details.name}</p>
+         <p>ReleaseDate:${details.releaseDate}</p>
+         <p>Sensor:${details.mainFeatures.sensors}</p>
+         <p>Others:${details.others}</p>
+  
+    `
+    phoneDetails.appendChild(div);
+}
